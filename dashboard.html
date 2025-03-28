@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - College Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <i class="fas fa-university"></i>
+                <h1>College Portal</h1>
+            </div>
+            <div class="header-right">
+                <span id="studentName">Welcome, Student</span>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Student Profile Section -->
+            <section class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="https://via.placeholder.com/150" alt="Student Profile" id="studentImage">
+                        <button class="edit-image-btn">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <div class="profile-info">
+                        <h2 id="studentFullName">John Doe</h2>
+                        <p id="studentId">Student ID: 12345</p>
+                        <p id="studentCourse">Computer Science</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Information Cards -->
+            <div class="info-cards">
+                <!-- Personal Information Card -->
+                <div class="info-card">
+                    <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+                    <div class="card-content">
+                        <p><strong>Email:</strong> <span id="studentEmail">john.doe@college.edu</span></p>
+                        <p><strong>Phone:</strong> <span id="studentPhone">+1 234 567 8900</span></p>
+                        <p><strong>Address:</strong> <span id="studentAddress">123 College Street, City, Country</span></p>
+                    </div>
+                </div>
+
+                <!-- Academic Information Card -->
+                <div class="info-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Academic Information</h3>
+                    <div class="card-content">
+                        <p><strong>CGPA:</strong> <span id="studentCGPA">3.8</span></p>
+                        <p><strong>Semester:</strong> <span id="studentSemester">4th</span></p>
+                        <p><strong>Attendance:</strong> <span id="studentAttendance">95%</span></p>
+                    </div>
+                </div>
+
+                <!-- Course Information Card -->
+                <div class="info-card">
+                    <h3><i class="fas fa-book"></i> Current Courses</h3>
+                    <div class="card-content">
+                        <ul id="currentCourses">
+                            <li>Data Structures</li>
+                            <li>Computer Networks</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <p>&copy; 2024 College Portal. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </footer>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
