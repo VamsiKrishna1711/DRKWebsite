@@ -1,0 +1,24 @@
+{
+  "name": "real-project",
+  "version": "1.0.0",
+  "description": "A modern web application for college students to access their academic information, personal details, and course information.",
+  "main": "dashboard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VamsiKrishna1711/DRKWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VamsiKrishna1711/DRKWebsite/issues"
+  },
+  "homepage": "https://github.com/VamsiKrishna1711/DRKWebsite#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1"
+  }
+}

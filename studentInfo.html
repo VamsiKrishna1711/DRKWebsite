@@ -4,43 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Info</title>
-
+    <style>
+        .message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>welcome student</h1>
-    <p>add your info</p>
-    <form action="SUBMIT">
-        <label for="email">Enter your email</label>
-        <input id="email" placeholder="enter your email" type=email />
-        <p></p>
-        <label for="phone">Enter your phone number:</label>
-        <input id="phone" placeholder="enter your phone number"/>
+    <h1>Welcome Student</h1>
+    <p>Add your info</p>
+    <form id="studentForm">
         <div>
-            <p>address</p>
-            <textarea placeholder="enter your address"></textarea>
-            <label for="pincode" >pincode</label>
-            <input id="pincode"/>
+            <label for="name">Full Name:</label>
+            <input id="name" name="name" placeholder="Enter your full name" required/>
         </div>
-        <p>course</p>
-        <select>
-            <option>CSE </option>
-            <option>CSD </option>
-            <option>CSM </option>
-            <option>MECH</option>
-            <option>CIVIL</option>
-        </select>
-        <p>Semester</p>
-        <select>
-            <option>1-1</option>
-            <option>1-2</option>
-            <option>2-1</option>
-            <option>2-2</option>
-            <option>3-1</option>
-            <option>3-2</option>
-            <option>4-1</option>
-            <option>4-2</option>
-        </select>
- 
+        
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" placeholder="Enter your email" type="email" required/>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input id="phone" name="phone" placeholder="Enter your phone number" required/>
+        </div>
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div>
+            <label for="pincode">Pincode:</label>
+            <input id="pincode" name="pincode" placeholder="Enter pincode" required/>
+        </div>
+
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option>CSE</option>
+                <option>CSD</option>
+                <option>CSM</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option>1-1</option>
+                <option>1-2</option>
+                <option>2-1</option>
+                <option>2-2</option>
+                <option>3-1</option>
+                <option>3-2</option>
+                <option>4-1</option>
+                <option>4-2</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
     </form>
+
+    <script src="studentInfo.js"></script>
 </body>
 </html>
