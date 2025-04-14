@@ -1,4 +1,14 @@
-const Student = require('./index.js');
+const { Student, connectDB } = require('./index.js');
+
+// Initialize the database connection
+const init = async () => {
+    await connectDB();
+    // Your database operations here
+};
+
+init().catch(err => {
+    console.error('Failed to initialize database:', err);
+});
 
 const sampleStudents = [
     {
